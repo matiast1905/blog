@@ -10,7 +10,7 @@ categories: [Data Analysis, EDA, Maps, Clusters, PCA]
 
 # What causes death around the world?
 
-In this blog post I will analyze the [causes of death dataset](https://ourworldindata.org/causes-of-death) from [our world in data](https://ourworldindata.org/). A copy of the dataset is uploaded in my github page in [this link](#TODO).
+In this blog post I will analyze the [causes of death dataset](https://ourworldindata.org/causes-of-death) from [our world in data](https://ourworldindata.org/). A copy of the dataset is uploaded in [my github page](https://raw.githubusercontent.com/matiast1905/blog/main/posts/global-mortality-analysis/data/share-of-deaths-by-cause.csv).
 
 Let's start by loading in the data
 
@@ -36,6 +36,7 @@ mortality %>%
   head() %>% 
   knitr::kable()
 ```
+
 <br>
 
 ## Data Cleaning
@@ -110,6 +111,7 @@ mortality_by_region %>%
   slice_sample(n = 10) %>% 
   knitr::kable()
 ```
+
 <br>
 
 This first plot shows the 20 more common global death causes in 2019
@@ -253,6 +255,7 @@ mortality_by_country_wdi %>%
   head() %>% 
   knitr::kable()
 ```
+
 <br>
 
 ### How does change in GDP affects death causes?
@@ -415,7 +418,7 @@ On the other hand, in countries with low income, you are more likely to die of t
 
 So, the conclusion we drawn from the analysis is that money produces cancer? That doesn't sound right... It's important to highlight that age of death was never considered in this analysis, and a more reasonable hypothesis would be that people dying of cancer live longer than those dying of neonatal disorder. In this case, a more accurate conclusion might be: *money allows you to live enough to die of cancer*.
 
-Now we know what produced deaths around the world in 2019, another interesting question is: Have the death causes proportions been changing over the years within country? Is it more or less likely to die of [communicable diseases](https://www.dhs.wisconsin.gov/disease/communicable.htm#:~:text=Communicable%20diseases%2C%20also%20known%20as,human%20or%20other%20animal%20host.) nowadays than  30 years ago?
+Now we know what produced deaths around the world in 2019, another interesting question is: Have the death causes proportions been changing over the years within country? Is it more or less likely to die of [communicable diseases](https://www.dhs.wisconsin.gov/disease/communicable.htm#:~:text=Communicable%20diseases%2C%20also%20known%20as,human%20or%20other%20animal%20host.) nowadays than 30 years ago?
 
 ### Change in death causes over the years
 
@@ -786,6 +789,7 @@ mortality_wide_clusters %>%
   slice_sample(n = 20) %>% 
   knitr::kable()
 ```
+
 <br>
 
 That's what we wanted, a dataframe with the country, the year and the predicted cluster. Now we can make an animated visualization using the `{gganimate}` package
@@ -810,7 +814,6 @@ clusters_animation <- world %>%
 
 gganimate::anim_save("posts/global-mortality-analysis/animation.gif", clusters_animation, width = 1000, height = 500, fps = 6)
 ```
-
 
 ![](animation.gif)
 
@@ -845,7 +848,7 @@ This is the end of this post, I hope you have found it helpful. I try to use dif
 
 As a conclusion, the main insights extracted from the data are:
 
-1.    **Cardiovascular diseases** account for almost a third of the global deaths.
-2.    **Noncommunicable diseases** account for 74% of the global deaths.
-3.    People who live in countries with higher GDP per capita are more likely to die of Cardiovascular diseases, Cancers and alzheimer's disease, and less likely to die of tuberculosis, malaria, enteric infections and many other communicable diseases.
-4.    Lastly, the most important, **global trends are changing over time**. Global health is getting better over the years, hopefully there will be a time when all the death causes that were eradicated in high income countries will also cease to exist in lower income countries.
+1.  **Cardiovascular diseases** account for almost a third of the global deaths.
+2.  **Noncommunicable diseases** account for 74% of the global deaths.
+3.  People who live in countries with higher GDP per capita are more likely to die of Cardiovascular diseases, Cancers and alzheimer's disease, and less likely to die of tuberculosis, malaria, enteric infections and many other communicable diseases.
+4.  Lastly, the most important, **global trends are changing over time**. Global health is getting better over the years, hopefully there will be a time when all the death causes that were eradicated in high income countries will also cease to exist in lower income countries.
