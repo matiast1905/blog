@@ -1,4 +1,5 @@
 ---
+comments: false
 title: "Posts"
 listing:
   contents: posts
@@ -9,5 +10,4 @@ listing:
   filter-ui: true
 page-layout: full
 title-block-banner: true
-comments: false
 ---

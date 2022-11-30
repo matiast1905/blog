@@ -1,7 +1,7 @@
 ---
+comments: false
 title: "Matias Taron Simoes"
 image: profile.jpg
-comments: false
 about:
   template: jolla
   links:
