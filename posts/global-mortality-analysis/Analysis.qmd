@@ -10,7 +10,7 @@ categories: [Data Analysis, EDA, Maps, Clusters, PCA]
 
 # What causes death around the world?
 
-In this blog post I will analyze the [causes of death dataset](https://ourworldindata.org/causes-of-death) from [our world in data](https://ourworldindata.org/). A copy of the dataset is uploaded in [my github page](https://raw.githubusercontent.com/matiast1905/blog/main/posts/global-mortality-analysis/data/share-of-deaths-by-cause.csv).
+In this blog post I will analyze the [causes of death dataset](https://ourworldindata.org/causes-of-death) from [our world in data](https://ourworldindata.org/). A copy of the dataset is uploaded in [this link](https://raw.githubusercontent.com/matiast1905/blog/main/posts/global-mortality-analysis/data/share-of-deaths-by-cause.csv) of the [blog's github](https://github.com/matiast1905/blog)
 
 Let's start by loading in the data
 
