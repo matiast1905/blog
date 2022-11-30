@@ -1,5 +1,4 @@
 ---
-comments: false
 title: "Matias Taron Simoes"
 image: profile.jpg
 about:

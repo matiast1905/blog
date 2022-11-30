@@ -22,7 +22,3 @@ format:
     css: styles.css
 
 editor: source
-
-comments:
-  giscus:
-    repo: matiast1905/blog

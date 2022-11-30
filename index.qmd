@@ -1,5 +1,4 @@
 ---
-comments: false
 title: "Posts"
 listing:
   contents: posts
