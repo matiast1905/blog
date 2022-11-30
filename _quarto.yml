@@ -1,0 +1,24 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: docs
+
+website:
+  title: "Matias Taron Simoes"
+  navbar:
+    right:
+      - text: "About"
+        file: about.qmd
+      - icon: github
+        href: https://github.com/matiast1905
+      - icon: twitter
+        href: https://twitter.com/Matias_Taron
+      - text: "{{< fa brands kaggle >}}"
+        href: https://www.kaggle.com/matiastaron
+
+format:
+  html:
+    theme: materia
+    css: styles.css
+
+editor: source

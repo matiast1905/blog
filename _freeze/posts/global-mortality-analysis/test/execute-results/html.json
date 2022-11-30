@@ -1,0 +1,14 @@
+{
+  "hash": "dec18f09c46cbb2852588ab8a5566bcb",
+  "result": {
+    "markdown": "---\ntitle: \"test\"\noutput: html_document\ndate: \"2022-11-29\"\n---\n\n\n![image](\"/home/matias/Documents/Github/matias_blog/posts/global-mortality-analysis/animation.gif\")\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+---
+title: "Matias Taron Simoes"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/Matias_Taron
+    - icon: github
+      text: Github
+      href: https://github.com/matiast1905
+    - text: "{{< fa brands kaggle >}} Kaggle"
+      href: https://www.kaggle.com/matiastaron
+---
