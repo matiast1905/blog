@@ -215,7 +215,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="what-causes-death-around-the-world" class="level1">
 <h1>What causes death around the world?</h1>
-<p>In this blog post I will analyze the <a href="https://ourworldindata.org/causes-of-death">causes of death dataset</a> from <a href="https://ourworldindata.org/">our world in data</a>. A copy of the dataset is uploaded in <a href="https://raw.githubusercontent.com/matiast1905/blog/main/posts/global-mortality-analysis/data/share-of-deaths-by-cause.csv">my github page</a>.</p>
+<p>In this blog post I will analyze the <a href="https://ourworldindata.org/causes-of-death">causes of death dataset</a> from <a href="https://ourworldindata.org/">our world in data</a>. A copy of the dataset is uploaded in <a href="https://raw.githubusercontent.com/matiast1905/blog/main/posts/global-mortality-analysis/data/share-of-deaths-by-cause.csv">this link</a> of the <a href="https://github.com/matiast1905/blog">blog’s github</a></p>
 <p>Let’s start by loading in the data</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>mortality <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"posts/global-mortality-analysis/data/share-of-deaths-by-cause.csv"</span>)</span>
@@ -600,11 +600,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell-output-display">
 <table class="table table-sm table-striped">
 <colgroup>
-<col style="width: 32%">
-<col style="width: 10%">
+<col style="width: 38%">
 <col style="width: 5%">
-<col style="width: 32%">
-<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 31%">
+<col style="width: 18%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -617,74 +617,74 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Western Pacific Region (WHO)</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: right;">2002</td>
-<td style="text-align: left;">Enteric infections</td>
-<td style="text-align: right;">0.00560</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Upper Middle Income</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: right;">1997</td>
-<td style="text-align: left;">Exposure to forces of nature</td>
-<td style="text-align: right;">0.00040</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">South-East Asia Region (WHO)</td>
+<td style="text-align: left;">North America (WB)</td>
 <td style="text-align: left;">NA</td>
 <td style="text-align: right;">2006</td>
-<td style="text-align: left;">Alcohol disorders</td>
-<td style="text-align: right;">0.00170</td>
+<td style="text-align: left;">Heat and cold exposure</td>
+<td style="text-align: right;">0.0006</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">South Asia (WB)</td>
+<td style="text-align: left;">Europe &amp; Central Asia (WB)</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: right;">2001</td>
-<td style="text-align: left;">Alcohol disorders</td>
-<td style="text-align: right;">0.00170</td>
+<td style="text-align: right;">2008</td>
+<td style="text-align: left;">Chronic respiratory diseases</td>
+<td style="text-align: right;">0.0384</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">World</td>
-<td style="text-align: left;">OWID_WRL</td>
-<td style="text-align: right;">1996</td>
-<td style="text-align: left;">Conflict</td>
-<td style="text-align: right;">0.00132</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Scotland</td>
+<td style="text-align: left;">African Region (WHO)</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: right;">1993</td>
-<td style="text-align: left;">Alzheimer’s disease</td>
-<td style="text-align: right;">0.02510</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">European Region (WHO)</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: right;">1994</td>
-<td style="text-align: left;">Nutritional deficiencies</td>
-<td style="text-align: right;">0.00080</td>
+<td style="text-align: right;">2007</td>
+<td style="text-align: left;">Lower respiratory infections</td>
+<td style="text-align: right;">0.0905</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Sub-Saharan Africa (WB)</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: right;">2010</td>
-<td style="text-align: left;">Alcohol disorders</td>
-<td style="text-align: right;">0.00070</td>
+<td style="text-align: right;">1995</td>
+<td style="text-align: left;">Heat and cold exposure</td>
+<td style="text-align: right;">0.0006</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Low Income</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">1993</td>
+<td style="text-align: left;">Lower respiratory infections</td>
+<td style="text-align: right;">0.1086</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Western Pacific Region (WHO)</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">1995</td>
+<td style="text-align: left;">Enteric infections</td>
+<td style="text-align: right;">0.0101</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">East Asia &amp; Pacific (WB)</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: right;">2015</td>
-<td style="text-align: left;">Alcohol disorders</td>
-<td style="text-align: right;">0.00170</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: left;">Kidney diseases</td>
+<td style="text-align: right;">0.0215</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Region of the Americas (WHO)</td>
+<td style="text-align: left;">Upper Middle Income</td>
 <td style="text-align: left;">NA</td>
-<td style="text-align: right;">1991</td>
-<td style="text-align: left;">Liver diseases</td>
-<td style="text-align: right;">0.02410</td>
+<td style="text-align: right;">2003</td>
+<td style="text-align: left;">Diarrheal diseases</td>
+<td style="text-align: right;">0.0054</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sub-Saharan Africa (WB)</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">2009</td>
+<td style="text-align: left;">Neonatal disorders</td>
+<td style="text-align: right;">0.0981</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Eastern Mediterranean Region (WHO)</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">2008</td>
+<td style="text-align: left;">Maternal disorders</td>
+<td style="text-align: right;">0.0093</td>
 </tr>
 </tbody>
 </table>
@@ -1855,6 +1855,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 });
+</script>
+<script src="https://giscus.app/client.js" data-repo="matiast1905/blog" data-repo-id="R_kgDOIh0ENQ" data-category="General" data-category-id="DIC_kwDOIh0ENc4CS1CT" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 
